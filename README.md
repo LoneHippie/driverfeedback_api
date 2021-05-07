@@ -5,4 +5,4 @@ Each entry has a license plate number and a country/state. Comments, warnings an
 
 ## Entry point
 
-server.js
+> server.js
