@@ -14,4 +14,3 @@ exports.setDriverIds = (req, res, next) => {
 exports.getAllComments = factory.getAll(Comment);
 exports.getComment = factory.getOne(Comment);
 exports.createComment = factory.createOne(Comment);
-exports.deleteComment = factory.deleteOne(Comment);

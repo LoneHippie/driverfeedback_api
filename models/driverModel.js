@@ -18,7 +18,7 @@ const driverSchema = new mongoose.Schema({
     createdAt: {
         type: Date, //Date is being used as a native JS type
         default: Date.now(),
-        select: false //createdAt will now always be excluded from client res
+        select: false //createdAt will always be excluded from client res
     }
 },
 { //schema options object
@@ -26,6 +26,7 @@ const driverSchema = new mongoose.Schema({
     toObject: { virtuals: true }
 });
 
+//virtual populate driver with comments on res
 driverSchema.virtual('comments', {
     ref: 'Comment',
     foreignField: 'driver',

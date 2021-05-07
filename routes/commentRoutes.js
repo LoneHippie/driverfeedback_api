@@ -12,7 +12,6 @@ router.route('/')
     );
 
 router.route('/:id')
-    .get(commentController.getComment)
-    .delete(commentController.deleteComment);
+    .get(commentController.getComment);
 
 module.exports = router;
