@@ -1,5 +1,5 @@
 {
-  "name": "Driver Feedback API",
+  "name": "driverfeedback_api",
   "version": "1.0.0",
   "description": "An API for managing data for driver related information",
   "main": "server.js",
@@ -18,6 +18,9 @@
   "scripts": {
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">=10.0.0"
   },
   "author": "Jordan",
   "license": "ISC"
