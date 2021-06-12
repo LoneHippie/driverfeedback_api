@@ -21,7 +21,7 @@ const app = express();
 /////////// Middlewares
 
 //enabling cors for use on other domains
-app.enable(cors());
+app.use(cors());
 app.options('*', cors());
 
 //limit reqs from unique IPs
